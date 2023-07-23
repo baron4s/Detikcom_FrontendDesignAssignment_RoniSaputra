@@ -1,0 +1,502 @@
+:root {
+  --primary-color: #007cbd;
+  --secondary-color: #ffffff;
+  --tertiary-color: #1b1e28;
+  --font: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background-color: #f4fbff;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  z-index: 999;
+}
+
+.navbar-brand {
+  display: flex;
+  width: 152px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.nav-item a {
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cta-register {
+  background-color: var(--secondary-color);
+  padding: 10px 30px;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 100px;
+  color: var(--primary-color) !important;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url(../assets/images/hero-image-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.color-gradiant {
+  position: absolute;
+  left: 0;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    linear-gradient(45deg, #2095e4 0%, #3eb7dd 51%, #b0e2f8 100%);
+  width: 100%;
+  height: 100vh;
+  mix-blend-mode: multiply;
+}
+
+.wave-top {
+  background-image: url(../assets/images/wave-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 370px;
+}
+
+.wave-top-gradiant {
+  position: absolute;
+  background: linear-gradient(
+    to top,
+    rgba(62, 199, 243, 0),
+    rgba(27, 133, 232, 1)
+  );
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  mix-blend-mode: multiply;
+}
+
+.wave-bottom {
+  bottom: 0;
+  background-image: url(../assets/images/wave-bottom.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 125px;
+}
+
+.wave-bottom-gradiant {
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(62, 199, 243, 0),
+    rgba(27, 133, 232, 1)
+  );
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  mix-blend-mode: multiply;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 116px;
+  background: linear-gradient(360deg, #f4fbff 0%, rgba(244, 251, 255, 0) 100%);
+}
+
+.headline-text {
+  margin: 0 103px;
+}
+
+.headline p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.headline p {
+  font-size: 12px;
+  font-weight: 600px;
+  margin-bottom: 30px;
+}
+
+.headline h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.btn-cta-register {
+  background-color: #3eb7dd;
+  font-size: 14px;
+  color: var(--secondary-color);
+  padding: 16px 20px;
+  border-radius: 5px;
+  font-weight: 800;
+  border: none;
+}
+
+.about {
+  padding: 100px 19px;
+  background-color: #f4fbff;
+}
+
+.card-about .about-img {
+  width: 100%;
+}
+.card-about .about-img img[alt='about-image'] {
+  width: 100%;
+}
+
+.card-about .body {
+  margin-top: 30px;
+}
+
+.card-about .card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.card-about .card-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--tertiary-color);
+}
+
+.card-about .share span {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.mekanisme {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    linear-gradient(45deg, #2095e4 0%, #3eb7dd 51%, #b0e2f8 100%);
+  height: 100%;
+}
+
+.wave-top-mekanisme,
+.wave-bottom-mekanisme {
+  position: absolute;
+  background-image: url(../assets/images/wave-top-mekanisme.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 15%;
+  left: 0;
+  width: 100%;
+  height: 205px;
+}
+
+.wave-top-mekanisme {
+  top: 0;
+}
+
+.wave-bottom-mekanisme {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+.wave-top-mekanisme-gradient,
+.wave-bottom-mekanisme-gradient {
+  position: absolute;
+  background: linear-gradient(
+    to top,
+    rgba(62, 199, 243, 0),
+    rgba(27, 133, 232, 1)
+  );
+  left: 0;
+  width: 100%;
+  height: 40%;
+  mix-blend-mode: multiply;
+}
+
+.wave-top-mekanisme-gradient {
+  top: 0;
+}
+
+.wave-bottom-mekanisme-gradient {
+  transform: rotate(180deg);
+  bottom: 0;
+}
+
+.mekanisme h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+
+.mekanisme .card {
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.mekanisme .card:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.mekanisme .card img {
+  margin-bottom: 30px;
+}
+
+.mekanisme .card-body {
+  padding: 0;
+}
+
+.mekanisme .card-body .title {
+  margin-bottom: 10px;
+}
+
+.mekanisme .card-body .card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.mekanisme .card-body .card-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+.mekanisme .card-body .note {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: -15px;
+}
+
+/* running logo */
+
+.running-logo .title {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.running-logo .logo {
+  overflow: hidden;
+  display: flex;
+}
+
+.logo-list {
+  display: flex;
+  animation: slider 10s infinite linear;
+}
+
+.logo-list .logo-item {
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  margin: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 291px;
+  height: 144px;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* running logo */
+
+/* agregator */
+
+.agregator {
+  margin: 96px 58px;
+}
+
+.agregator > h5 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.agregator .card {
+  background: transparent;
+}
+
+.agregator .card:not(last-child) {
+  margin-bottom: 35px;
+}
+
+.agregator .card-body {
+  margin-top: 15px;
+}
+
+.agregator .card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--tertiary-color);
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.agregator .card-subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #7a7b7e;
+}
+
+.inner {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.agregator .card img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.agregator .card:hover img {
+  transform: scale(1.1);
+}
+.agregator .card:hover .card-title {
+  color: var(--primary-color);
+}
+
+/* agregator */
+
+/* footer */
+footer {
+  background-color: var(--primary-color);
+  padding: 30px 40px;
+}
+
+.article-footer p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.detikfinance-sosmed {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.detikfinance-sosmed img:not(last-child) {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.copyright {
+  font-size: 10px;
+  font-weight: 400px;
+  color: var(--secondary-color);
+}
+
+/* footer */
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .navbar-brand {
+    width: 192px;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .hero {
+    background-image: url(../assets/images/hero-image.jpg);
+    background-position: top;
+  }
+
+  .wave-top {
+    background-image: url(../assets/images/wave.svg);
+  }
+
+  .headline-text {
+    max-width: 924px;
+  }
+
+  .headline p:first-child {
+    font-size: 24px;
+  }
+
+  .headline h2 {
+    font-size: 48px;
+  }
+
+  .headline p:not(:first-child) {
+    font-size: 14px;
+  }
+
+  .card-about .body {
+    margin-top: 0;
+    margin-left: 35px;
+  }
+
+  .card-about .about-img img[alt='about-image'] {
+    width: auto;
+  }
+
+  .mekanisme .card-body {
+    margin-left: 30px;
+  }
+
+  .mekanisme .card-body .card-subtitle {
+    margin-top: 0;
+  }
+
+  .running-logo .title {
+    font-size: 18px;
+  }
+
+  .agregator .card {
+    margin-bottom: 0;
+  }
+
+  .agregator > h5 {
+    font-size: 32px;
+  }
+
+  .article-footer {
+    column-gap: 10rem;
+  }
+  .article-footer p {
+    margin: 0;
+  }
+
+  .detikfinance-sosmed {
+    margin-top: 0;
+  }
+}
